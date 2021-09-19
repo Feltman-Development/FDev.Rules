@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Base\.vshistory\NotifyOnChangeAttribute.cs\2021-04-06_22_12_48_300.cs" />
-    <Compile Include="Base\Dynamic\.vshistory\DynamicPropertyBase.cs\2021-09-13_07_16_58_458.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="EntityFramework.DynamicFilters" Version="3.2.0" />
     <PackageReference Include="EntityFramework.DynamicLinq" Version="1.2.12" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="4.0.0-preview1.21237.2" />
@@ -30,7 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FDEV.Rules.Demo.Core\FDEV.Rules.Demo.Core.csproj" />
     <ProjectReference Include="..\FDEV.Rules.Demo.Domain\FDEV.Rules.Demo.Domain.csproj" />
   </ItemGroup>
 

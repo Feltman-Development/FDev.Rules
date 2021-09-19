@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
+using FDEV.Rules.Demo.Core.Conversion;
 
 namespace FDEV.Rules.Demo.Core.Utility
 {
@@ -79,7 +80,7 @@ namespace FDEV.Rules.Demo.Core.Utility
             else if (targetType == typeof(short)) return short.Parse(sourceString, NumberStyles.Any, culture.NumberFormat);
             else if (targetType == typeof(decimal)) return decimal.Parse(sourceString, NumberStyles.Any, culture.NumberFormat);
             else if (targetType == typeof(DateTime)) return DateTime.Parse(sourceString, culture.DateTimeFormat);
-            else if (targetType == typeof(byte)) return ConvertValue.ToBytes(sourceString);
+            else if (targetType == typeof(byte)) return SimpleTypes.ToBytes(sourceString);
             else if (targetType == typeof(double)) return double.Parse(sourceString, NumberStyles.Any, culture.NumberFormat);
             else if (targetType == typeof(float)) return float.Parse(sourceString, NumberStyles.Any, culture.NumberFormat);
             else if (targetType == typeof(bool)) return sourceString.ToLower() == "true" || sourceString.ToLower() == "on" || sourceString == "1";

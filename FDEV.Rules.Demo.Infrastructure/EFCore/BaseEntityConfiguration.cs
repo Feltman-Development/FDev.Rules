@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using FRules.Demo.Engine.Domain.Base;
 using Microsoft.EntityFrameworkCore;
 
-namespace FRules.Demo.Engine.Infrastructure.EFCore
+namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {
     /// <summary>
     /// Applies common configuration to all base entities

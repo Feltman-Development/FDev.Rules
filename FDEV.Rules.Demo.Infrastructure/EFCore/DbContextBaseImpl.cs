@@ -5,12 +5,11 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using FRules.Demo.Engine.Domain.Base;
+using FDEV.Rules.Demo.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using FRules.Demo.Engine.Infrastructure.EFCoreSQLite;
 
-namespace FRules.Demo.Engine.Infrastructure.EFCore
+namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {
     /// <summary>
     /// An implementation of most members of the generic 'IDbContext' and 'IDbContextExecutables', so that when inheriting this for a 
@@ -80,7 +79,7 @@ namespace FRules.Demo.Engine.Infrastructure.EFCore
 
         public void Insert<TEntity>(TEntity entity) where TEntity : class, IEntity => Set<TEntity>().SingleInsert(entity);
 
-        public void InsertOrUpdate<TEntity>(TEntity entity) where TEntity : class, IEntity
+        public void InsertOrUpdate<TEntity>(TEntity entity) where TEntity : class, FDEV.Rules.Demo.Domain.Common.IEntity
         {
             if (Contains(entity))
             {

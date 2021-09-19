@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace FRules.Demo.Engine.Infrastructure.EFCore
+namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {
     public static class DbContextExtension
     {

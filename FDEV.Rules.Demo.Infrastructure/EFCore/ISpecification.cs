@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace FRules.Demo.Engine.Infrastructure.Repositories
+namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {
     public interface ISpecification<T>
     {

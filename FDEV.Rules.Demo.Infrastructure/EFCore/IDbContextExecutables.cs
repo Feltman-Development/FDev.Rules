@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FRules.Demo.Engine.Infrastructure.EFCoreSQLite
+namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {
     /// <summary>
     /// Interface with executable functions for the dat context.

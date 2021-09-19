@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+  </PropertyGroup>s
 
   <ItemGroup>
     <PackageReference Include="Autofac.Configuration" Version="6.0.0" />

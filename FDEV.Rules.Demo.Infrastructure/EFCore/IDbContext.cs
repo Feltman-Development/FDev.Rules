@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using FRules.Demo.Engine.Domain.Base;
 using Microsoft.EntityFrameworkCore;
+using FDEV.Rules.Demo.Domain.Common;
 
-namespace FRules.Demo.Engine.Infrastructure.EFCoreSQLite
+namespace FDEV.Rules.Demo.Infrastructure.EFCore;
 {
     /// <summary>
     /// An interface for data context 

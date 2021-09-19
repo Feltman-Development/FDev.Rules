@@ -25,9 +25,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8 - PRESENTATION", "8 - PRE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FDEV.Rules.Demo.Test", "FDEV.Rules.Demo.Test\FDEV.Rules.Demo.Test.csproj", "{EC4670E6-A2F6-4A68-81C6-2073A37C6A2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDEV.Rules.Demo.UI.DemonstrationSite", "FDEV.Rules.Demo.UI.DemonstrationSite\FDEV.Rules.Demo.UI.DemonstrationSite.csproj", "{695BBFDF-C464-4573-9ECC-625B8BC7BF74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FDEV.Rules.Demo.UI.DemonstrationSite", "FDEV.Rules.Demo.UI.DemonstrationSite\FDEV.Rules.Demo.UI.DemonstrationSite.csproj", "{695BBFDF-C464-4573-9ECC-625B8BC7BF74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDEV.Rules.Demo.SharedMVC", "FDEV.Rules.Demo.SharedMVC\FDEV.Rules.Demo.SharedMVC.csproj", "{E444B41B-1E07-44E6-BAD9-367D6C4586AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FDEV.Rules.Demo.SharedMVC", "FDEV.Rules.Demo.SharedMVC\FDEV.Rules.Demo.SharedMVC.csproj", "{E444B41B-1E07-44E6-BAD9-367D6C4586AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

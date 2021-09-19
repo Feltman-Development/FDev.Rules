@@ -99,7 +99,7 @@ namespace FDEV.Rules.Demo.Core.Logging.SeriLog
 
         public bool IsEnabled(LogLevel logLevel)
         {
-            return CurrentLogger.IsEnabled(Conversion.Logging.MicrosoftToSerilogLevel(logLevel));
+            return CurrentLogger.IsEnabled(Conversion.CommonLogging.MicrosoftToSerilogLevel(logLevel));
         }
 
         public IDisposable BeginScope<TState>(TState state)

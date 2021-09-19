@@ -1,13 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="Base\.vshistory\NotifyOnChangeAttribute.cs\2021-04-06_22_12_48_300.cs" />
-    <Compile Include="Base\Dynamic\.vshistory\DynamicPropertyBase.cs\2021-09-13_07_16_58_458.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FDEV.Rules.Demo.Core\FDEV.Rules.Demo.Core.csproj" />

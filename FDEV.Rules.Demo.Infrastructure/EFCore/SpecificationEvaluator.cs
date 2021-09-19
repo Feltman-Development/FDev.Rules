@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace FRules.Demo.Engine.Infrastructure.Repositories
+namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {
     public static class SpecificationEvaluator<T> where T : class
     {

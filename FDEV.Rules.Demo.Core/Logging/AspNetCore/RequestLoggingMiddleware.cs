@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace FDEV.Rules.Demo.Core.Logging.AspNetCore
 {
-    // ReSharper disable once ClassNeverInstantiated.Global
     internal class RequestLoggingMiddleware
     {
         private readonly RequestDelegate _next;
