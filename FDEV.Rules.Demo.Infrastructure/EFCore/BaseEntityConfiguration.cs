@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
+using FDEV.Rules.Demo.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 
 namespace FDEV.Rules.Demo.Infrastructure.EFCore
@@ -13,8 +14,6 @@ namespace FDEV.Rules.Demo.Infrastructure.EFCore
         /// <summary>
         /// Creates a delegate for the configure method below and applies it to entities that match the same constraints as the generic constraint on our data context.
         /// </summary>
-        /// <param name="modelBuilder"></param>
-        /// <returns></returns>
         public static ModelBuilder ApplyBaseEntityConfiguration(this ModelBuilder modelBuilder)
         {
             var method = typeof(BaseEntityConfiguration).GetTypeInfo().DeclaredMethods.Single(m => m.Name == nameof(Configure));
@@ -35,7 +34,8 @@ namespace FDEV.Rules.Demo.Infrastructure.EFCore
             {
                 builder.HasKey(e => e.Uid);
                 builder.Ignore(x => x.IsPersisted);
-                builder.HasQueryFilter(x => (x as IAggregateRoot).DeletedAt < DateTime.UtcNow);
+                //Special for IAggregateRoots
+                builder.HasQueryFilter(x => (x as IAggregateRoot).IsDeleted);
             });
         }
 

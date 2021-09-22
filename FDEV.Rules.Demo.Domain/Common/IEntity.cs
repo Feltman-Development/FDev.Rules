@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using FDEV.Rules.Demo.Core.Utility;
 
 namespace FDEV.Rules.Demo.Domain.Common
 {
@@ -12,7 +14,13 @@ namespace FDEV.Rules.Demo.Domain.Common
         /// Get the unique Id for the Entity.
         /// </summary>
         /// <remarks> NOTE: Set in Entity class with a incrementing Guid method. </remarks>
-        Guid Uid { get; }
+        [Key]
+        Guid Uid => GuidUtility.NewSequentialGuid();
+
+        /// <summary>
+        /// Get the name of the entity.
+        /// </summary>
+        string Name { get; set; }
 
         /// <summary>
         /// DateTime of creation.
@@ -32,14 +40,13 @@ namespace FDEV.Rules.Demo.Domain.Common
         /// <remarks> NOTE: Set by intersecting on context changes. </remarks>
         int Version { get; set; }
 
+        #region Default Implementations
+
         /// <summary>
         /// Get if the Entity is persisted to database
         /// </summary>
         public bool IsPersisted => !IsTransient(this);
         private static bool IsTransient(IEntity obj) => obj != null && Equals(obj.Uid, default);
-
-
-        #region Default Implementations
 
         /// <summary>
         /// Set to suppress PropertyChanged events.

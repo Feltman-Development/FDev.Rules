@@ -1,6 +1,5 @@
 ﻿using System;
 using FDEV.Rules.Demo.Domain.Identity.Details;
-using FDEV.Rules.Demo.Domain.Common;
 
 namespace FDEV.Rules.Demo.Domain.Identity
 {

@@ -25,24 +25,9 @@ namespace FDEV.Rules.Demo.Core.Logging
 
         /// <inheritdoc />
         protected int _maxUsedLogFileEnumeration;
+
         private static string _logFolder => DevData.LogData.DefaultDevLogFolder;
+
         private static LogInfo _currentLogFileInfo => LogInfo.GetCurrentLog(_manager.GetType(), _logFolder);
-
-        /// <summary>
-        /// Get a logger instance by its type as generic constraint
-        /// </summary>
-        public virtual ILog GetLogger<T>() => Manager.GetLogger(typeof(T));
-
-        /// <summary>
-        /// Get a logger instance by its type as a parameter
-        /// </summary>
-        public new virtual ILog GetLogger(Type type) => Manager.GetLogger(type);
-
-        /// <summary>
-        /// Get a logger by its type as a name
-        /// </summary>
-        public new virtual ILog GetLogger(string name) => Manager.GetLogger(name);
-
-
     }
 }

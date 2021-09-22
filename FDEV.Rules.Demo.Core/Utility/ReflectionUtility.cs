@@ -112,6 +112,20 @@ namespace FDEV.Rules.Demo.Core.Utility
             }
         }
 
+        /// <summary>
+        /// Gets a type with given name from the executing assembly collection.
+        /// </summary>
+        public static Type GetTypeFromName(string typeName)
+        {
+            Type type = null;
+            foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                type = assembly.GetType(typeName, false);
+                if (type != null) break;
+            }
+            return type;
+        }
+
         //TODO: Refac member
         /// <summary>
         /// Parses Properties and Fields including Array and Collection references. Used internally for the extended (xxxEx) Reflection methods.

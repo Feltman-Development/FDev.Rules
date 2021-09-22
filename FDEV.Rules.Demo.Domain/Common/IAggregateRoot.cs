@@ -37,12 +37,14 @@ namespace FDEV.Rules.Demo.Domain.Common
 
         /// <summary>
         /// Gets a date from where this aggregate no longer is active (soft deleted) and will be excluded from queries.
+        /// NOTE: Rather than uing this use the calculated property <seealso cref="IsDeleted"/>.
         /// </summary>
-        DateTime DeletedAt { get; internal set; }
+        public DateTime DeletedAt { get; set; }
 
         /// <summary>
-        /// Get if the entity is soft deleted
+        /// Get if the entity is soft deleted.
+        /// Default implementation on interface, so that it's not needed down the line and wom't be included in data model.
         /// </summary>
-        bool IsDeleted => DeletedAt != default && DeletedAt < DateTime.UtcNow;
+        public bool IsDeleted => DeletedAt != default && DeletedAt < DateTime.UtcNow;
     }
 }

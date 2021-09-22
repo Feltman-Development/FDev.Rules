@@ -1,6 +1,8 @@
 ﻿using FDEV.Rules.Demo.Core;
 using Microsoft.EntityFrameworkCore;
-using FSites.Core;
+using FDEV.Rules.Demo.Domain.Identity;
+using FDEV.Rules.Demo.Domain.Rules;
+using FDEV.Rules.Demo.Domain.Shopping;
 
 namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {

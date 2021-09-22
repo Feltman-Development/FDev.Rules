@@ -9,12 +9,6 @@ namespace FDEV.Rules.Demo.Domain.Common
     /// </summary>
     public abstract class Entity : IEntity
     {
-        protected Entity() => Uid = GuidUtility.NewSequentialGuid();
-
-        [Key]
-        /// <inheritdoc />
-        public Guid Uid { get; }
-
         /// <inheritdoc />
         public string Name { get; set; }
 
@@ -26,9 +20,5 @@ namespace FDEV.Rules.Demo.Domain.Common
 
         /// <inheritdoc />
         public int Version { get; set; }
-
-        /// <inheritdoc />
-        public bool IsPersisted => !IsTransient(this);
-        private static bool IsTransient(IEntity obj) => obj != null && Equals(obj.Uid, default);
     }
 }

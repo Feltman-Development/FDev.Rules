@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using FDEV.Rules.Demo.Domain.Common;
 
-namespace FDEV.Rules.Demo.Infrastructure.EFCore;
+namespace FDEV.Rules.Demo.Infrastructure.EFCore
 {
     /// <summary>
     /// An interface for data context 

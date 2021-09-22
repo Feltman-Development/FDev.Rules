@@ -68,5 +68,20 @@ namespace FDEV.Rules.Demo.Domain.Identity.Details
         public string CountryOrState { get; set; }
     }
 
-    public class Addresses : List<Address> {}
+    public class Addresses : List<Address>
+    {
+        public Addresses(IEnumerable<Address> collection) : base(collection)
+        {
+        }
+
+        public Addresses(params Address[] addresses)
+        {
+            foreach (var address in addresses)
+            {
+                Add(address);
+            }
+        }
+
+        public void AddAddress(Address address) => Add(address);
+    }
 }
