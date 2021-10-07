@@ -29,6 +29,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FDEV.Rules.Demo.UI.Demonstr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FDEV.Rules.Demo.SharedMVC", "FDEV.Rules.Demo.SharedMVC\FDEV.Rules.Demo.SharedMVC.csproj", "{E444B41B-1E07-44E6-BAD9-367D6C4586AC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - DOCUMENTATION", "0 - DOCUMENTATION", "{F412B6C6-31B2-4E0D-8A22-4FAE5C30E1CE}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\ASPNETCORE.png = Documentation\ASPNETCORE.png
+		Documentation\ASPNETCORE_Projects.png = Documentation\ASPNETCORE_Projects.png
+		Documentation\Depency Injection note with shared App project.png = Documentation\Depency Injection note with shared App project.png
+		Documentation\FDev Rules - Task Manaagement.xlsx = Documentation\FDev Rules - Task Manaagement.xlsx
+		Documentation\FDevRules-Illustrations.vsdx = Documentation\FDevRules-Illustrations.vsdx
+		Documentation\Job Description.docx = Documentation\Job Description.docx
+		Documentation\Rule-Engine - almost there.gif = Documentation\Rule-Engine - almost there.gif
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F45BEE08-5B9F-409C-9A02-314F49E22B49}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

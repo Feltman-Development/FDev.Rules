@@ -86,7 +86,7 @@ namespace FDEV.Rules.Demo.Core.Serialization
             {
                 return LoadXmlString<T>(xml, emitUTF8Identifier);
             }
-            catch (SerializationException exception)
+            catch (SerializationException)
             {
                 //MessageBox.Show(@"Message: " + exception.Message, @"Error loading configuration from XML");
                 return default;

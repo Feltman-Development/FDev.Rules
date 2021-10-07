@@ -13,8 +13,36 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\DependencyValidation1.layerdiagram" Link="DependencyValidation1.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DependencyValidation1.layerdiagram.layout" Link="DependencyValidation1.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DependencyValidation1.layerdiagram.suppressions" Link="DependencyValidation1.layerdiagram.suppressions" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DomainDependencyValidation.layerdiagram.layout" Link="DomainDependencyValidation.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DomainDependencyValidation.layerdiagram.suppressions" Link="DomainDependencyValidation.layerdiagram.suppressions" />
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\Logical Layers\DependencyValidation1.layerdiagram" Link="DependencyValidation1.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Logical Layers\DependencyValidation1.layerdiagram.layout" Link="DependencyValidation1.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Logical Layers\DependencyValidation1.layerdiagram.suppressions" Link="DependencyValidation1.layerdiagram.suppressions" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\DomainDependencyValidation.layerdiagram.layout" Link="DomainDependencyValidation.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\DomainDependencyValidation.layerdiagram.suppressions" Link="DomainDependencyValidation.layerdiagram.suppressions" />
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\FDEV.Rules.Demo.layerdiagram" Link="FDEV.Rules.Demo.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\DomainDependencyValidation.layerdiagram" Link="DomainDependencyValidation.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\DomainDependencyValidation.layerdiagram" Link="DomainDependencyValidation.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DynamicFluentBuilder" Version="1.0.0" />
+    <PackageReference Include="Fluency" Version="1.0.64" />
     <PackageReference Include="FluentValidation" Version="10.3.3" />
-    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
+    <PackageReference Include="HonkSharp" Version="1.0.3" />
     <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
   </ItemGroup>
 

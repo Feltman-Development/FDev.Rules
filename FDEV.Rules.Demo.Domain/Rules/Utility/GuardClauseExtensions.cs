@@ -72,6 +72,6 @@ namespace FDEV.Rules.Demo.Domain.Rules.Utility
                 throw new AssertionException(_message, innerException);
         }
 
-        private static string _message;
+        private static readonly string _message;
     }
 }

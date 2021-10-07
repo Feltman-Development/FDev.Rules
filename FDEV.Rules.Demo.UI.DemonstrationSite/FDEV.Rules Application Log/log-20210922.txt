@@ -1,0 +1,23 @@
+2021-09-22 04:30:04.826 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-22 04:30:04.899 +02:00 [INF] Hosting environment: Development
+2021-09-22 04:30:04.900 +02:00 [INF] Content root path: C:\SRC\RuleEngines\FDEV.Rules.Demo\FDEV.Rules.Demo.UI.DemonstrationSite
+2021-09-22 04:30:05.572 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 33.2816 ms
+2021-09-22 04:30:06.301 +02:00 [INF] HTTP GET / responded 200 in 1366.3720 ms
+2021-09-22 04:30:08.085 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 11.9958 ms
+2021-09-22 04:30:10.694 +02:00 [INF] HTTP GET /_blazor?id=3EgRFUbFK7DD_cY4iqqPuQ responded 101 in 2235.3095 ms
+2021-09-22 04:30:29.466 +02:00 [INF] HTTP GET /_blazor?id=DOzBi3GiEfZyAf1_BUhQxg responded 101 in 20726.2372 ms
+2021-09-22 04:30:29.492 +02:00 [INF] HTTP POST /_blazor/disconnect responded 200 in 40.6683 ms
+2021-09-22 04:30:44.669 +02:00 [INF] HTTP GET /error responded 200 in 31.8610 ms
+2021-09-22 04:30:44.797 +02:00 [INF] HTTP GET /css/app.css responded 404 in 2.9781 ms
+2021-09-22 04:30:55.286 +02:00 [INF] HTTP GET /about responded 200 in 18.7582 ms
+2021-09-22 04:30:55.864 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 30.7712 ms
+2021-09-22 04:31:00.697 +02:00 [INF] HTTP GET /_blazor?id=4kBiItHKpIqB-RampOjJKw responded 101 in 4211.9714 ms
+2021-09-22 05:10:16.542 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-22 05:10:16.645 +02:00 [INF] Hosting environment: Development
+2021-09-22 05:10:16.647 +02:00 [INF] Content root path: C:\SRC\RuleEngines\FDEV.Rules.Demo\FDEV.Rules.Demo.UI.DemonstrationSite
+2021-09-22 05:10:17.674 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 86.9118 ms
+2021-09-22 05:10:17.884 +02:00 [INF] HTTP GET / responded 200 in 1190.5386 ms
+2021-09-22 05:10:19.083 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 41.8271 ms
+2021-09-22 05:10:23.680 +02:00 [INF] HTTP GET /_blazor?id=RDmXR7mEoMCqMcsQ4Z1T9w responded 101 in 3875.0948 ms
+2021-09-22 05:11:09.264 +02:00 [INF] HTTP POST /_blazor/disconnect responded 200 in 80.6976 ms
+2021-09-22 05:11:09.372 +02:00 [INF] HTTP GET /_blazor?id=lr8DKakrT3D7XP5-cuWSyw responded 101 in 47284.5118 ms

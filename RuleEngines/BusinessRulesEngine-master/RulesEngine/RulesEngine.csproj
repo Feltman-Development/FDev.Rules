@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>BusinessRules.Engine</PackageId>
+    <Version>1.0.14</Version>
+    <Authors>Dan Ionescu</Authors>
+    <Company>Usinesoft</Company>
+    <Description>A rules engine for .Net applications</Description>
+    <Copyright>Copyright USINESOFT 2015</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/usinesoft/BusinessRulesEngine</PackageProjectUrl>
+    <PackageTags>business rules engine enrichment financial</PackageTags>
+    <PackageReleaseNotes>Provide optional explanation for rules. Multi-target support</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="Remotion.Linq" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

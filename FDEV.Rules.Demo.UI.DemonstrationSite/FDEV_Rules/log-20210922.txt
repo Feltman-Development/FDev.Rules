@@ -1,0 +1,20 @@
+2021-09-22 02:40:36.158 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-22 02:40:36.341 +02:00 [INF] Hosting environment: Development
+2021-09-22 02:40:36.344 +02:00 [INF] Content root path: C:\SRC\RuleEngines\FDEV.Rules.Demo\FDEV.Rules.Demo.UI.DemonstrationSite
+2021-09-22 02:40:38.341 +02:00 [INF] HTTP GET / responded 200 in 1952.6154 ms
+2021-09-22 02:40:41.287 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 57.8531 ms
+2021-09-22 02:40:46.513 +02:00 [INF] HTTP GET /fetchdata responded 200 in 385.1317 ms
+2021-09-22 02:40:47.020 +02:00 [INF] HTTP GET /_blazor?id=dyNdNblXwqNZEVeAHaSQtA responded 101 in 3652.5096 ms
+2021-09-22 02:40:47.039 +02:00 [INF] HTTP POST /_blazor/disconnect responded 200 in 39.1320 ms
+2021-09-22 02:40:47.349 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 9.7018 ms
+2021-09-22 02:40:49.397 +02:00 [INF] HTTP GET /counter responded 200 in 29.3359 ms
+2021-09-22 02:40:50.853 +02:00 [INF] HTTP POST /_blazor/disconnect responded 200 in 1.1324 ms
+2021-09-22 02:40:51.065 +02:00 [INF] HTTP GET /_blazor?id=SSKTVAszCwpw86MxkjZMpw responded 101 in 3461.0862 ms
+2021-09-22 02:40:51.518 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 0.7708 ms
+2021-09-22 02:40:57.585 +02:00 [INF] HTTP GET /_blazor?id=o9sFGgfXBw-bQoZGP8OO6Q responded 101 in 5478.4698 ms
+2021-09-22 02:40:57.675 +02:00 [INF] HTTP POST /_blazor/disconnect responded 200 in 0.9335 ms
+2021-09-22 02:49:44.401 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-22 02:49:44.771 +02:00 [INF] Hosting environment: Development
+2021-09-22 02:49:44.776 +02:00 [INF] Content root path: C:\SRC\RuleEngines\FDEV.Rules.Demo\FDEV.Rules.Demo.UI.DemonstrationSite
+2021-09-22 02:49:48.583 +02:00 [INF] HTTP GET / responded 200 in 3753.3667 ms
+2021-09-22 02:49:50.818 +02:00 [INF] HTTP POST /_blazor/negotiate?negotiateVersion=1 responded 200 in 119.4291 ms

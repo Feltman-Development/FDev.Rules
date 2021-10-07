@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
+using Fluency;
 
 namespace FDEV.Rules.Demo.Domain.Identity.Details
 {
     public class Phone : DetailBase
     {
-        public Phone(PhoneType phoneType, string phoneName,string description, int contryCode, int number, int extension) : base(phoneName, description)
+        public Phone(PhoneType phoneType, string phoneName, string countryCode, string number, string extension = "") : base(phoneType.ToString(), phoneName)
         {
             PhoneType = phoneType;
             PhoneName = phoneName;
-            ContryCode = contryCode;
+            CountryCode = countryCode;
             Number = number;
             Extension = extension;
         }
@@ -23,11 +24,11 @@ namespace FDEV.Rules.Demo.Domain.Identity.Details
         /// </summary>
         public string PhoneName { get; set; }
 
-        public int ContryCode { get; set; }
+        public string CountryCode { get; set; }
         
-        public int Number { get; set; }
+        public string Number { get; set; }
 
-        public int Extension { get; set; }
+        public string Extension { get; set; }
     }
 
     public class Phones : List<Phone> {}

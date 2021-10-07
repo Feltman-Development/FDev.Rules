@@ -42,7 +42,7 @@ namespace FDEV.Rules.Demo.Core.Serialization
                     return reader.ReadToEnd();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return "Unhandled Error";
             }
@@ -99,7 +99,7 @@ namespace FDEV.Rules.Demo.Core.Serialization
                     return reader.ReadToEnd();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return "Unhandled Error";
             }
@@ -134,7 +134,7 @@ namespace FDEV.Rules.Demo.Core.Serialization
                     return reader.ReadToEnd();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return "Unhandled Error";
             }

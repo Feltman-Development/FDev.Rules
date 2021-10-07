@@ -5,31 +5,49 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GlobalExceptionHandler" Version="4.0.2" />
-    <PackageReference Include="GlobalExceptionHandler.ContentNegotiation.Mvc" Version="2.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.10" />
-    <PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
-    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
     <PackageReference Include="Microsoft.NETCore.Windows.ApiSets" Version="1.0.1" />
-    <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.2" />
-    <PackageReference Include="System.Windows.Extensions" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FDEV.Rules.Demo.Core\FDEV.Rules.Demo.Core.csproj" />
-    <ProjectReference Include="..\FDEV.Rules.Demo.Domain\FDEV.Rules.Demo.Domain.csproj" />
-    <ProjectReference Include="..\FDEV.Rules.Demo.Infrastructure\FDEV.Rules.Demo.Infrastructure.csproj" />
+    <ProjectReference Include="..\FDEV.Rules.Demo.Domain\FDEV.Rules.Demo.Domain.csproj">
+      <TreatAsUsed>true</TreatAsUsed>
+    </ProjectReference>
+    <ProjectReference Include="..\FDEV.Rules.Demo.Infrastructure\FDEV.Rules.Demo.Infrastructure.csproj">
+      <TreatAsUsed>true</TreatAsUsed>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\DependencyValidation1.layerdiagram" Link="DependencyValidation1.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DependencyValidation1.layerdiagram.layout" Link="DependencyValidation1.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DependencyValidation1.layerdiagram.suppressions" Link="DependencyValidation1.layerdiagram.suppressions" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DomainDependencyValidation.layerdiagram.layout" Link="DomainDependencyValidation.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\DomainDependencyValidation.layerdiagram.suppressions" Link="DomainDependencyValidation.layerdiagram.suppressions" />
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\Logical Layers\DependencyValidation1.layerdiagram" Link="DependencyValidation1.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Logical Layers\DependencyValidation1.layerdiagram.layout" Link="DependencyValidation1.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Logical Layers\DependencyValidation1.layerdiagram.suppressions" Link="DependencyValidation1.layerdiagram.suppressions" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\DomainDependencyValidation.layerdiagram.layout" Link="DomainDependencyValidation.layerdiagram.layout" />
+    <None Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\DomainDependencyValidation.layerdiagram.suppressions" Link="DomainDependencyValidation.layerdiagram.suppressions" />
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\FDEV.Rules.Demo.layerdiagram" Link="FDEV.Rules.Demo.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\Solution Layers\DomainDependencyValidation.layerdiagram" Link="DomainDependencyValidation.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <AdditionalFiles Include="..\FDEV.Rules.Demo.DependencyValidations\DomainDependencyValidation.layerdiagram" Link="DomainDependencyValidation.layerdiagram">
+      <Visible>False</Visible>
+    </AdditionalFiles>
   </ItemGroup>
 
 </Project>

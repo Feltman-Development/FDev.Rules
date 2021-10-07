@@ -1,4 +1,4 @@
-﻿using Autofac;
+﻿//using Autofac;
 
 namespace FDEV.Rules.Demo.Domain.Common.Dynamic
 {
@@ -11,15 +11,15 @@ namespace FDEV.Rules.Demo.Domain.Common.Dynamic
     {
         public void Populate()
         {    
-            var builder = new ContainerBuilder();
-            builder.RegisterType<Entity>().As<IEntity>().InstancePerRequest(); 
-            builder.RegisterType<CommandDispatcher>().As<ICommandDispatcher>();
+            //var builder = new ContainerBuilder();
+            //builder.RegisterType<Entity>().As<IEntity>().InstancePerRequest(); 
+            //builder.RegisterType<CommandDispatcher>().As<ICommandDispatcher>();
 
-            builder.Register(ctx => 
-            {
-                var id = ctx.Resolve<IEntity>().Uid; 
-                return new CommandDispatcher();
-            }).As<ICommandDispatcher>();
+            //builder.Register(ctx => 
+            //{
+            //    var id = ctx.Resolve<IEntity>().Uid; 
+            //    return new CommandDispatcher();
+            //}).As<ICommandDispatcher>();
         }
 
         //public void PopulateRegistrations()
