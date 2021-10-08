@@ -40,18 +40,24 @@ namespace FDEV.Rules.Demo.Domain.Identity
                 return this;
             }
 
-           public Build MobilePhone(string nameForPhone, string countryCode, string phoneNumber)
+           public Build AddMobilePhone(string nameForPhone, string countryCode, string phoneNumber)
            {
-                var mobilePhone = new Phone(PhoneType.PrivateMobile, "nameForPhone", countryCode, phoneNumber);
+                var mobilePhone = new Phone(PhoneType.PrivateMobile, nameForPhone, countryCode, phoneNumber);
+                _user.Phones.Add(mobilePhone);
                 return this;
            }
         }
 
-        private User(string loginName, string firstName, string lastName)
+        public User()
+        {
+        }
+
+        public User(string loginName, string firstName, string lastName, DateTime birthDate)
         {
             LoginName = loginName;
             FirstName = firstName;
             LastName = lastName;
+            BirthDate = birthDate;
         }
 
         public string LoginName { get; set; }

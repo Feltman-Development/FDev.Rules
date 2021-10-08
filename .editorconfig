@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# DV0001: Invalid dependency
+dotnet_diagnostic.DV0001.severity = none
